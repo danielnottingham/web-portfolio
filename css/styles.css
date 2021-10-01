@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 241, 241);
+  color: rgb(57, 57, 57);
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+#tag-a {
+  color: rgb(162, 12, 248);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+#tag-a .dark {
+  color: rgb(246, 169, 241);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(53, 51, 51);
+  position: relative;
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transition: 0.3s;
+  top: 5px;
+  left: 5px;
+  box-shadow: 
+  inset 4px 4px 4px rgb(255, 255, 255),
+  inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+  background-color: rgb(39, 38, 38);
+  transition: 0.3s;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+  color: rgb(255, 255, 255);
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(205, 236, 64);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-text {
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(31, 30, 30);
+  width: 100%;
+  color: aliceblue;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 400px;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(71, 71, 71);
+}
+
+/* #codeplay {
+  background-image: url('https://camo.githubusercontent.com/7d2907ebaa903415938c639fc36a63b9960d41241d18e99cbeaf395f022762f3/68747470733a2f2f692e696d6775722e636f6d2f6f424c515771762e676966');
+  background-size: cover;
+} */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about {
+  height: 100vh;
+}
+
+.about-text {
+  padding: 15px;
+}
+
+.hero-image {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cube {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  
+  transform: rotate(-25deg) skew(25deg);
+}
+
+.cube::before {
+  position: absolute;
+  content: "";
+  width: 21px;
+  height: 100%;
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+
+.cube::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+
+#html {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("../img/html-square-transp.png");
+  background-size: cover;
+  background-color: rgb(165, 96, 231);
+  box-shadow: -60px 60px 20px rgb(50 50 50 / 15%);
+}
+
+#html::before {
+  background-color: rgb(189, 154, 221);
+}
+
+#html::after {
+  background-color: rgb(205, 188, 221);
+}
+
+#css {
+  left: 250px;
+  bottom: 240px;
+  background-image: url("../img/css-square-transp.png");
+  background-size: cover;
+  background-color: rgb(107, 105, 228);
+  box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+}
+
+#css::before {
+  background-color: rgb(107, 105, 228);
+}
+
+#css::after {
+  background-color: rgb(107, 105, 228);
+}
+
+#javascript {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("../img/javascript-square-transp.png");
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -40px 40px 20px rgb(50 50 50 / 15%);
+}
+
+#javascript::before {
+  background-color: rgb(224, 248, 7);
+}
+
+#javascript::after {
+  background-color: rgb(224, 248, 7);
+}
+
+#ruby {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("../img/ruby-square-transp.png");
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -80px 80px 20px rgb(50 50 50 / 15%);
+}
+
+#ruby::before {
+  background-color: rgb(202, 68, 59);
+}
+
+#ruby::after {
+  background-color: rgb(202, 68, 59);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 30px;
+  background-color: rgb(39, 38, 38);
+  color: rgb(244, 241, 241);
+  font-weight: 100;
+}
+
+.dark footer { 
+  background-color: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+  .main-text {
+    width: 50%;
+  }
+  
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}
+
+/* EFEITO MÁQUINA DE ESCREVER */
+
+#typing-phrase::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: blinking .7s infinite;
+}
+ 
+@keyframes blinking {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* EFEITO MÁQUINA DE ESCREVER */
