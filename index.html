@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,19 @@
   <title>Portfólio - Daniel Nottingham</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <nav>
     <ul>
-      <a href="#about"><li class="grow">About</li></a>
-      <a href="#projects"><li class="grow">Projects</li></a>
-      <a href="#footer"><li href="#footer" class="grow">Contact</li></a>
+      <a href="#about">
+        <li class="grow">About</li>
+      </a>
+      <a href="#projects">
+        <li class="grow">Projects</li>
+      </a>
+      <a href="#footer">
+        <li href="#footer" class="grow">Contact</li>
+      </a>
     </ul>
   </nav>
   <header>
@@ -41,22 +49,73 @@
   </section>
 
   <section class="about" id="about">
-    <div class="about-text">
-      <h2>About me</h2>
-      <p>I am Brazilian, I was born in the city of Fortaleza-CE. 
-        Majoring in Information Systems. 
-        And in my free time I like to read books, practice exercises and watch movies.
-      </p>
-
-      <h3>Teck Stack</h3>
-      <li>HTML5</li>
-      <li>CSS</li>
-      <li>Bootstrap</li>
-      <li>Javascript</li>
-      <li>PostrgreSQL</li>
-      <li>Git & Github</li>
-      <li>Test(RSpec / Minitest)</li>
-      <li>Ruby on Rails</li>
+    <div class='row'>
+      <div class='column'>
+        <div class='about-column'>
+          <div class="about-text">
+            <h2>About me</h2>
+            <hr>
+            <li>I am Brazilian, I was born in the city of Fortaleza-CE.</li>
+            <li>Majoring in Information Systems</li>
+            <li>And in my free time I like to read books, practice exercises and watch movies.</li>
+          </div>
+        </div>
+      </div>
+      <div class='column'>
+        <div class='skills-column'>
+          <h2>Tech Skills</h2>
+          <div class="skills-bar">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line html"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line css"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Bootstrap</span>
+              </div>
+              <div class="progress-line bootstrap"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Javascript</span>
+              </div>
+              <div class="progress-line javascript"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>PostrgreSQL</span>
+              </div>
+              <div class="progress-line postgresql"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Git & Github</span>
+              </div>
+              <div class="progress-line github"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Test(RSpec / Minitest)</span>
+              </div>
+              <div class="progress-line rspec"><span></span></div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Ruby on Rails</span>
+              </div>
+              <div class="progress-line rails"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -76,10 +135,12 @@
   </section>
 
   <footer id="footer">
+    <h2>Contacts</h2>
     <p><strong>Phone / Whatsapp:</strong> (85) 99674-5953</p>
     <p><strong>Email:</strong> danielddr15@gmail.com / danielnottingham.ti@gmail.com</p>
   </footer>
-  
+
   <script src="./src/app.js"></script>
 </body>
+
 </html>
