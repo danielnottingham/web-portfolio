@@ -180,10 +180,31 @@ li {
   flex: 1;
 }
 
-/* #codeplay {
-  background-image: url('https://camo.githubusercontent.com/7d2907ebaa903415938c639fc36a63b9960d41241d18e99cbeaf395f022762f3/68747470733a2f2f692e696d6775722e636f6d2f6f424c515771762e676966');
-  background-size: cover;
-} */
+#photo {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 35px;
+  margin-left: 95px;
+}
+
+#codeplay {
+  height: 350px;
+  width: 600px;
+  padding-top: 15px;
+  margin: 15px;
+}
+
+#espoo {
+  height: 350px;
+  width: 500px;
+  padding-top: 15px;
+  margin: 15px;
+}
+
+.svgs {
+  
+}
 
 .projects {
   display: flex;
@@ -253,7 +274,7 @@ li {
 }
 
 #css::before {
-  background-color: rgb(107, 105, 228);
+  background-color: rgb(97, 95, 214);
 }
 
 #css::after {
